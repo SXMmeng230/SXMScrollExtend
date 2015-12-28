@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Tad-YM-gOD" customClass="ScrollerView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="MgN-SD-Xjh">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="iVn-QX-ZHW">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="Tad-YM-gOD" id="XhH-lL-XVJ"/>
+                        <outlet property="delegate" destination="Tad-YM-gOD" id="wwd-2N-oIL"/>
+                    </connections>
+                </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="zNN-Md-gpb">
+                    <rect key="frame" x="215" y="563" width="170" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="lVa-W1-aEj"/>
+                        <constraint firstAttribute="width" constant="170" id="tb4-kB-qcf"/>
+                    </constraints>
+                    <color key="pageIndicatorTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="currentPageIndicatorTintColor" red="1" green="0.31021006239999999" blue="0.3816951676" alpha="1" colorSpace="calibratedRGB"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" red="0.43060292849999998" green="1" blue="0.35599157520000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="MgN-SD-Xjh" secondAttribute="bottom" id="3tc-St-FAn"/>
+                <constraint firstAttribute="centerX" secondItem="zNN-Md-gpb" secondAttribute="centerX" id="JxS-6B-PAv"/>
+                <constraint firstItem="MgN-SD-Xjh" firstAttribute="bottom" secondItem="zNN-Md-gpb" secondAttribute="bottom" id="iJr-RT-6q0"/>
+                <constraint firstItem="MgN-SD-Xjh" firstAttribute="leading" secondItem="Tad-YM-gOD" secondAttribute="leading" id="ppc-si-fXd"/>
+                <constraint firstItem="MgN-SD-Xjh" firstAttribute="top" secondItem="Tad-YM-gOD" secondAttribute="top" id="sy2-xh-eZm"/>
+                <constraint firstAttribute="trailing" secondItem="MgN-SD-Xjh" secondAttribute="trailing" id="tEj-eO-23a"/>
+            </constraints>
+            <connections>
+                <outlet property="collectionView" destination="MgN-SD-Xjh" id="ZjR-mj-2xh"/>
+                <outlet property="pageControl" destination="zNN-Md-gpb" id="UXj-eJ-0TM"/>
+            </connections>
+            <point key="canvasLocation" x="644" y="332"/>
+        </view>
+    </objects>
+</document>

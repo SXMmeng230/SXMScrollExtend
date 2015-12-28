@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>url</key>
+		<string>11url</string>
+		<key>icon</key>
+		<string>img_02</string>
+		<key>title</key>
+		<string>记忆中的东京爱情故事</string>
+	</dict>
+	<dict>
+		<key>url</key>
+		<string>22url</string>
+		<key>icon</key>
+		<string>img_03</string>
+		<key>title</key>
+		<string>剩得漫不经心，却又可歌可泣</string>
+	</dict>
+	<dict>
+		<key>url</key>
+		<string>33url</string>
+		<key>icon</key>
+		<string>img_04</string>
+		<key>title</key>
+		<string>神秘空难事故揭秘</string>
+	</dict>
+</array>
+</plist>
